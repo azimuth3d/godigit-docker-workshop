@@ -30,6 +30,20 @@
     "uilayout": "editor-terminal",
     "uieditorpath": "/home/godigit"
   },
+  "assets": {
+    "client": [
+      {
+        "file": "Dockerfile",
+        "target": "~/"
+      }
+    ],
+    "host01": [
+      {
+        "file": "Dockerfile",
+        "target": "~/"
+      }
+    ]
+  },
   "backend": {
     "imageid": "docker"
   }

@@ -34,13 +34,13 @@
     "client": [
       {
         "file": "Dockerfile",
-        "target": "~/"
+        "target": "/home/godigit"
       }
     ],
     "host01": [
       {
         "file": "Dockerfile",
-        "target": "~/"
+        "target": "/home/godigit"
       }
     ]
   },

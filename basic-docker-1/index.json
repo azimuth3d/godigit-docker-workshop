@@ -29,12 +29,13 @@
     "client": [
       {
         "file": "Dockerfile",
-        "target": "~/"
+        "target": "/home/godigit"
       }
     ]
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/home/godigit"
   },
   "backend": {
     "imageid": "docker"

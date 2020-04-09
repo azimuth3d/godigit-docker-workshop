@@ -25,10 +25,18 @@
       "text": "finish.md"
     }
   },
+  "assets": {
+    "client": [
+      {
+        "file": "Dockerfile",
+        "target": "~/"
+      }
+    ]
+  },
   "environment": {
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "docker"
   }
 }

@@ -28,15 +28,9 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "~/"
+    "uieditorpath": "/home/godigit"
   },
   "assets": {
-    "client": [
-      {
-        "file": "Dockerfile",
-        "target": "/home/godigit"
-      }
-    ],
     "host01": [
       {
         "file": "Dockerfile",

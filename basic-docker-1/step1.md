@@ -6,7 +6,7 @@
 เสร็จแล้วเราจะสร้าง โค้ดส่วนของ Dockerfile เพื่อใช้ในการสร้าง Image
 
 ```
-FROM scratch
-CMD ["echo","Hello Docker!"]
+FROM alpine
+CMD ["echo","Hello Docker"]
 
 ```

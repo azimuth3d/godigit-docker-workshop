@@ -19,16 +19,16 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "course.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
-  "files": ["Dockerfile", "index.html"],
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/home/godigit"
+    "uieditorpath": "~/"
   },
   "assets": {
     "client": [

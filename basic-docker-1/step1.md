@@ -7,6 +7,20 @@
 
 ```
 FROM alpine
-CMD ["echo","Hello Docker"]
+CMD ["echo","Hello Docker!"]
 
 ```
+
+หลังจากนั้น เราก็ไปที่ Terminal ที่อยุ่ด้านล่าง สั่ง
+
+`cd /home/godigit`
+
+เสร็จแล้ว เราจะเสร็จ docker image ที่ชื่อ godigit/hello-docker โดย
+
+`docker build . -t godigit/hello-docker`
+
+แล้ว ลองรัน docker container แรกของเราเลย !
+
+`docker run --rm --name hello godigit/hello-docker`
+
+จะได้ผลตามคำสัั่งที่เราเขียนไว้ใน image คือ echo คำว่า Hello docker! ออกมา

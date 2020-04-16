@@ -26,10 +26,6 @@
       "text": "finish.md"
     }
   },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uieditorpath": "/home/godigit"
-  },
   "assets": {
     "host01": [
       {

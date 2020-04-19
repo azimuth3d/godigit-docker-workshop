@@ -7,7 +7,7 @@
 
 เสร็จแล้วเราจะสร้าง โค้ดส่วนของ Dockerfile เพื่อใช้ในการสร้าง Image
 
-```
+```Dockerfile
 FROM alpine
 CMD ["echo","Hello Docker!"]
 
@@ -30,7 +30,7 @@ CMD ["echo","Hello Docker!"]
 ทีนี้ เราจะสร้าง image แบบใหม่ ที่ทำงาน แบบตืออเนื่อง และ restart ใหม่เมื่อมีการเปลี่ยนแปลงโค้ด
 ให้แก้ไข Dockerfile ตาม บรรทัดข้างล่าง
 
-```
+```Dockerfile
 FROM node:12-alpine
 WORKDIR /usr/app
 COPY . .

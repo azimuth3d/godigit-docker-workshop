@@ -46,7 +46,7 @@ services:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: your_database_root_password
+      MYSQL_ROOT_PASSWORD: passme
     volumes:
       - ./mysql:/var/lib/mysql
 ```

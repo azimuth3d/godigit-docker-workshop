@@ -21,9 +21,9 @@ version: 3.0
 - volumes กำหนด volume mapping เข้าไปใช้ภายใน container จะเป็น local folder หรือ Docker volume ที่สร้างแยกไว้ก็ได้
 - environments ใช้ส่งตัวแปร สิ่งแวดล้อมกับ Container
 
-โครงสร้าง Service ของเราที่จะทำกันใน Workshop นี่คือ !
+โครงสร้าง Service ของเราที่จะทำกันใน Workshop นี่คือ
 
-Nodejs ที่ frontend + backend + db
+Blog ที่สร้างด้วย Ghost + MySQL
 
 ```yaml
 version: "3"
@@ -33,6 +33,8 @@ services:
     restart: always
     depends_on:
       - db
+    ports:
+      - "2368:2368"
     environment:
       database__client: mysql
       database__connection__host: db
@@ -47,6 +49,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: passme
+    ports:
+      - "3306:3306"
     volumes:
       - ./mysql:/var/lib/mysql
 ```
